@@ -1,0 +1,23 @@
+@import '../../utilities/shared/scss/variable.scss';
+
+.header-container {
+    width: 100%;
+    height: 60px;
+    background: $head-color;
+    .brand-section {
+        float: left;
+        padding: 16.5px 0px;
+        padding-left: 10px;
+
+        span {
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+    .profile-section {
+        float: right;
+        padding: 10px;
+    }
+}
+

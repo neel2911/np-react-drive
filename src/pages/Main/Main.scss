@@ -1,0 +1,39 @@
+@import '../../utilities/shared/scss/variable.scss';
+
+.main-container {
+    width: calc(100% - 201px);
+    display: inline-block;
+    vertical-align: top;
+    height: calc(100vh - 60px);
+    overflow: scroll;
+    overflow-x: hidden;
+    .main-header-container{
+        width: 100%;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: $white;
+        box-shadow: 0 3px 5px -1px $box-shadow-color1, 0 6px 10px 0 $box-shadow-color2, 0 1px 18px 0 $box-shadow-color3;
+        .breadcrumb{
+            padding: 0;
+            margin: 0;
+        
+        }
+        .selected-file-section{
+            display: inline-block;
+            width: 70%;
+        }
+        .toolbar{
+            display: inline-block;
+            width: 28%;
+            text-align: right;
+            padding: 0px 20px 0px 0px;
+            .google-button {
+                border: 2px solid #8e8e8e;
+                margin-left: 10px;
+            }
+        }
+    }
+    
+}

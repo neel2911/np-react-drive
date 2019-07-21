@@ -1,0 +1,15 @@
+@import '../../utilities/shared/scss/variable.scss';
+
+.left-panel-container {
+    width: 200px;
+    height: calc(100vh - 60px);
+    display: inline-block;
+    box-shadow: 0 3px 5px -1px $box-shadow-color1, 0 6px 10px 0 $box-shadow-color2, 0 1px 18px 0 $box-shadow-color3;
+    text-align: center;
+    .google-button{
+        border: 2px solid;
+        color: $head-color;
+        width: 162px;
+    }
+}
+

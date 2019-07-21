@@ -1,0 +1,12 @@
+@import '../../utilities/shared/scss/variable.scss';
+
+
+.auth-container{
+    height: calc(100vh - 60px);
+    text-align: center;
+    .google-button{
+      margin-top: 300px;
+      border: 2px solid;
+      color: $head-color;
+    }
+}
