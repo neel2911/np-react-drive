@@ -81,7 +81,7 @@ class LeftPanel extends Component {
     render() {
         return (
             <div className="left-panel-container" >
-                <FileUpload onFileUploadClick={(e) => this.onFileUpload(e)} />
+                <FileUpload onFileUploadClick={this.onFileUpload} />
                 <Button onButtonClick={this.openModal} buttonText={'New Folder'} />
                 {this.state.isModalOpen ? <Modal onInputChange={(e) => this.onInputChange(e)} textValue={this.state.folderName} onCreateNewFolderClick={this.onCreateNewFolderClick} onCancelClick={this.onCancelClick} /> : null}
             </div>

@@ -7,7 +7,9 @@ export default ({ onFileUploadClick }) => {
     return (
         <div className="upload-btn-wrapper">
             <Button buttonText={'Upload a file'} />
-            <input type="file" name="myfile" onChange={onFileUploadClick} />
+            <input type="file" name="myfile" onClick={(event) => {
+                event.target.value = null
+            }} onChange={onFileUploadClick} />
         </div>
     )
 }
