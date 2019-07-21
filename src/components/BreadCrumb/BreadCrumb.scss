@@ -6,7 +6,7 @@
 
   &+.breadcrumb-item::before{
     padding: 8px;
-    color: black;
+    color: $black;
     content: "/\00a0";
   }
 
@@ -15,7 +15,7 @@
     text-decoration: none;
 
     &:hover{
-        color: #01447e;
+        color: $breadcrumb-hover;
         text-decoration: underline;
     }
     

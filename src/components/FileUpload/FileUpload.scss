@@ -7,14 +7,14 @@
     width: 162px;
     margin: 10px 0px;
     border-radius: 5px;
-    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 1px 0px 1px $box-shadow-color4;
     transition-property: background-color, box-shadow;
     transition-duration: 150ms;
     transition-timing-function: ease-in-out;
    
 
     &:hover{
-        box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 4px 5px 1px $box-shadow-color5;
     }
 
     .google-button{

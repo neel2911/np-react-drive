@@ -23,7 +23,7 @@ class LeftPanel extends Component {
         isModalOpen: false
     }
 
-    onFileUploadClick = (e) => {
+    onFileUpload = (e) => {
         const file = e.target.files[0];
 
         const boundary = 'reactdrive';
@@ -81,7 +81,7 @@ class LeftPanel extends Component {
     render() {
         return (
             <div className="left-panel-container" >
-                <FileUpload onFileUploadClick={(e) => this.onFileUploadClick(e)} />
+                <FileUpload onFileUploadClick={(e) => this.onFileUpload(e)} />
                 <Button onButtonClick={this.openModal} buttonText={'New Folder'} />
                 {this.state.isModalOpen ? <Modal onInputChange={(e) => this.onInputChange(e)} textValue={this.state.folderName} onCreateNewFolderClick={this.onCreateNewFolderClick} onCancelClick={this.onCancelClick} /> : null}
             </div>

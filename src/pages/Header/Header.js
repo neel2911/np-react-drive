@@ -18,17 +18,7 @@ class Header extends Component {
         this.authService = props.authService;
     }
 
-    onLoginClick = () => {
-        this.authService.login(this.loginSuccessCB);
-    }
 
-    loginSuccessCB = (isLogin) => {
-        console.log(isLogin);
-        if (isLogin) {
-            this.props.dispatch(AuthAction.login(isLogin))
-            this.props.dispatch(HttpAction.get(this.httpService.get('root')));
-        }
-    }
 
     onLogoutClick = () => {
         this.authService.logout();
@@ -44,8 +34,7 @@ class Header extends Component {
                 <div className="profile-section">
                     {
                         this.props.isAuthorized === true ?
-                            <Button onButtonClick={this.onLogoutClick} buttonText={'Sign Out'} /> :
-                            <Button onButtonClick={this.onLoginClick} buttonText={'Sign in with Google'} />
+                            <Button onButtonClick={this.onLogoutClick} buttonText={'Sign Out'} /> : null
                     }
                 </div>
             </div>

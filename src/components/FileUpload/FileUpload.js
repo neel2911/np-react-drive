@@ -1,6 +1,7 @@
 import React from 'react';
-import './FileUpload.scss';
+
 import Button from '../Button/Button';
+import './FileUpload.scss';
 
 export default ({ onFileUploadClick }) => {
     return (
